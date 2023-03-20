@@ -1,0 +1,189 @@
+/* ----------------colors
+#282D42 - dark blue
+#8099AE - light blue
+#EDF2F4 - blue to white
+#EF233C - red
+    
+
+ */
+
+/* -------global style------------ */
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0
+}
+
+h1,h2{
+    font-family: 'caveat',cursive;
+    font-weight: 300
+}
+h1{
+    font-size: 60px
+}
+h2{
+    font-size: 40px;
+    margin-top: 20pm
+}
+h3{
+    margin:0
+}
+
+
+nav{
+    text-align: center;
+    position: fixed;
+    width:100%;
+    background-color: aliceblue;
+    
+}
+nav a{
+    text-decoration: none;
+    display:inline-block;
+    margin:5px; 
+    font-size: 14px;
+    font-weight:700;
+    text-transform: uppercase;
+    color:#282D42
+
+}
+
+@media(min-width:440px){
+    nav a {
+        font-size: 18px;
+        margin:14px
+    }
+}
+
+/* -----header only-------- */
+header{
+    position: relative;
+   
+    text-align:center;
+    background-color: #282D42;
+    color:#8099AE
+
+}
+header h1, header h2{
+    color:#EDF2F4
+}
+h1{
+    margin:0
+}
+.content-wrap{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto;
+    padding:60px 50px;
+    max-width: 950px;
+    overflow:hidden;
+}
+.profile-image{
+    display:block;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
+
+@media(min-width:935px){
+    .content-wrap{
+        flex-direction:row;
+        justify-content:space-between
+    }
+}
+@media(min-width:440px){
+    .profile-image{
+        width:200px;
+        height:200px
+    }
+}
+@media(min-width:935px){
+    .profile-image{
+        width:250px;
+        height:250px
+    }
+}
+.btn{
+    background-color: #EF233C;
+    color:#EDF2F4;
+    text-decoration: none;
+    padding:0 5px;
+}
+@media(min-width:440px){
+    .btn{
+        padding:10px
+    }
+}
+.download{
+    position:absolute;
+    bottom:0;
+    right:0
+}
+/*----------- work expeirence------------ */
+.work-experience{
+    padding-top:40px;
+    background-color: #EDF2F4;
+}
+.work-wrapper{
+    margin:0 auto;
+    padding:0 30px;
+    max-width: 950px;
+}
+.job-wrapper{
+    padding-bottom: 30px;
+}
+@media(min-width: 935px){
+    .job-wrapper{
+        display:grid;
+        grid-template-columns: 1fr 2.5fr;
+        column-gap:30px
+    }
+    .job-description p:first-of-type{
+        margin-top:0
+    }
+    
+}
+h3~p{
+    margin:10px
+}
+ol li{
+    margin:8px 0;
+    padding-left:15px
+}
+
+ol li a {
+    color:blue
+}
+.education{
+    padding:40px 0;
+    background: linear-gradient(rgba(141,153,174,0.9), rgba(141,153,174,0.6)),
+     url(city.jpg) no-repeat fixed;
+    background-size: cover;
+}
+.education-wrapper{
+    margin:0 auto;
+    padding:0 30px;
+    max-width:950px
+
+}
+ul{
+    margin-top:0
+}
+
+footer{
+    text-align: center;
+    background-color:#282D42;
+    color:#8099AE
+
+
+}
+.contact-wrapper{
+    margin:0 auto;
+    padding: 50px 0;
+    max-width: 900px
+}
+.contact-buttons{
+    display:flex;
+    flex-direction: row;
+   
+}
