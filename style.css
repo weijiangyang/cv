@@ -10,7 +10,8 @@
 /* -------global style------------ */
 body{
     font-family: 'Open Sans', sans-serif;
-    margin: 0
+    margin: 0;
+    line-height: 1.3rem;
 }
 
 h1,h2{
@@ -18,11 +19,18 @@ h1,h2{
     font-weight: 300
 }
 h1{
-    font-size: 60px
+    font-size: 50px;
+    padding-bottom: 20px;
+    padding-top:30px
+
 }
 h2{
-    font-size: 40px;
-    margin-top: 20pm
+    
+    margin-top: 20pm;
+    font-size:30px;
+    white-space: nowrap;
+
+    
 }
 h3{
     margin:0
@@ -52,6 +60,7 @@ nav a{
         font-size: 18px;
         margin:14px
     }
+    
 }
 
 /* -----header only-------- */
@@ -70,6 +79,7 @@ h1{
     margin:0
 }
 .content-wrap{
+
     display:flex;
     flex-direction: column;
     align-items: center;
